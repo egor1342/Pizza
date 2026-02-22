@@ -1,0 +1,153 @@
+/* Базові стилі */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFAE64;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Посилання */
+a {
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+/* Хедер та навігація */
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FF7B00;
+    height: 120px;
+}
+
+nav a {
+    font-size: 18px;
+}
+
+/* Логотип */
+.logo {
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Основний контент */
+main {
+    padding: 20px;
+}
+
+/* Секції */
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #FFD3A0;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #D94600;
+    margin-bottom: 10px;
+}
+
+/* Піццерія (каталог) */
+.pizza-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #FFE0B2;
+    border-radius: 8px;
+}
+
+/* Відгуки */
+.reviews p {
+    font-style: italic;
+}
+
+/* Футер */
+footer {
+    background-color: #E20000;
+    color: #fff;
+    padding: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+
+/* Сітка каталогу */
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Картки піц */
+.pizza-card {
+    background-color: #FFE0B2;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pizza-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.pizza-card h2 {
+    color: #D94600;
+    margin-bottom: 8px;
+}
+
+.pizza-card p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Ефект наведення */
+.pizza-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+.buy{
+    background-color: white;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.188);
+}
+
+.buy:hover{
+    background-color: #f12f08;
+}
+
+
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1611915365928-565c527a0590?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGl6emElMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww");
+    background-repeat: no-repeat;   /* без повторень */
+    background-position: center;    /* по центру */
+    background-size: cover;         /* на весь контейнер */
+}
+
+main h1{
+    color: #FFD3A0;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.451);
+    font-size: 50px;
+}
